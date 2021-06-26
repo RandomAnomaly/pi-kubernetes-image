@@ -6,4 +6,6 @@ RUN apt-get install -y wget xz-utils
 
 COPY ./build.sh /kube-image/
 
-ENTRYPOINT ["./build.sh"]
+USER root
+
+ENTRYPOINT ["/kube-image/build.sh"]

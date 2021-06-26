@@ -1,3 +1,4 @@
+#! /bin/bash
 echo Downloading ubuntu image
 mkdir bin
 cd bin
