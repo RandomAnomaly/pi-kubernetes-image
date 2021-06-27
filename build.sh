@@ -8,4 +8,6 @@ mkdir mnt
 mount -o loop,offset=269484032 ubuntu-20.04.2-preinstalled-server-arm64+raspi.img ./mnt
 ls mnt/
 
+chroot ~/mnt/ /usr/bin/uname -a -r
+
 umount mnt
